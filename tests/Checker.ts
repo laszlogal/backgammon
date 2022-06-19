@@ -1,5 +1,5 @@
-import {Checker} from '../src/classes/Checker'
-import {expect} from 'chai'
+import { Checker } from '../src/classes/Checker'
+import { expect } from 'chai'
 describe("Checker", () => {
     it("White opposite should be Black", () => {
         expect(Checker.opposite(Checker.WHITE)).equal(Checker.BLACK);

@@ -1,6 +1,7 @@
 {
  "scripts": {
-  "test":  "set TS_NODE_COMPILER_OPTIONS={\"module\": \"commonjs\" } && mocha -r ts-node/register 'tests/**/*.ts'"
+  "test":  "set TS_NODE_COMPILER_OPTIONS={\"module\": \"commonjs\" } && mocha -r ts-node/register 'tests/**/*.ts'",
+  "type": "module"
   },
 
   "devDependencies": {
