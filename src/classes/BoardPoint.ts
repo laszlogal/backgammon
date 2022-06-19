@@ -1,5 +1,6 @@
 import { Checker } from './Checker'
 export class BoardPoint {
+
     public get amount(): number {
         return this._amount;
     }
@@ -16,5 +17,16 @@ export class BoardPoint {
     isOccupiedBy(checker: Checker): boolean {
         return this.checker === checker;
     }
+    
+    increase() {
+        this._amount++;
+    }
 
+    decrease() {
+        this._amount--;
+        if (this._amount <= 0) {
+            this._amount = 0;
+            this.checker = Checker.NONE;
+        }
+    }
 }
